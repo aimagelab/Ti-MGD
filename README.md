@@ -12,11 +12,9 @@
 
 This is the **official repository** for the [**paper**]() "*Multimodal-Conditioned Latent Diffusion Models for Fashion Image Editing*".
 
-## Overview
+**Code coming soon**
 
-<p align="center">
-    <img src="images/1.gif" style="max-width:500px">
-</p>
+## Overview
 
 >**Abstract**: <br>
 > Fashion illustration is a crucial medium for designers to convey their creative vision and transform design concepts into tangible representations that showcase the interplay between clothing and the human body. In the context of fashion design, computer vision techniques have the potential to enhance and streamline the design process. Departing from prior research primarily focused on virtual try-on, this paper tackles the task of multimodal-conditioned fashion image editing. Our approach aims to generate human-centric fashion images guided by multimodal prompts, including text, human body poses, garment sketches, and fabric textures. To address this problem, we propose extending latent diffusion models to incorporate these multiple modalities and modifying the structure of the denoising network, taking multimodal prompts as input. To condition the proposed architecture on fabric textures, we employ textual inversion techniques and let diverse cross-attention layers of the denoising network attend to textual and texture information, thus incorporating different granularity conditioning details. Given the lack of datasets for the task, we extend two existing fashion datasets, Dress Code and VITON-HD, with multimodal annotations.
