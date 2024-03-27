@@ -1,4 +1,5 @@
-# Multimodal-Conditioned Latent Diffusion Models for Fashion Image Editing
+# Ti-MGD
+### Multimodal-Conditioned Latent Diffusion Models for Fashion Image Editing
 [**Alberto Baldrati**](https://scholar.google.com/citations?hl=en&user=I1jaZecAAAAJ)**\***,
 [**Davide Morelli**](https://scholar.google.com/citations?user=UJ4D3rYAAAAJ&hl=en)**\***,
 [**Marcella Cornia**](https://scholar.google.com/citations?hl=en&user=DzgmSJEAAAAJ),
@@ -7,12 +8,10 @@
 
 **\*** Equal contribution.
 
-<!-- [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)]() -->
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2403.14828)
 [![GitHub Stars](https://img.shields.io/github/stars/aimagelab/Ti-MGD?style=social)](https://github.com/aimagelab/Ti-MGD)
 
-This is the **official repository** for the [**paper**]() "*Multimodal-Conditioned Latent Diffusion Models for Fashion Image Editing*".
-
-**Code coming soon**
+This is the **official repository** for the [**paper**](https://arxiv.org/abs/2403.14828) "*Multimodal-Conditioned Latent Diffusion Models for Fashion Image Editing*".
 
 ## Overview
 
@@ -20,17 +19,27 @@ This is the **official repository** for the [**paper**]() "*Multimodal-Condition
 > Fashion illustration is a crucial medium for designers to convey their creative vision and transform design concepts into tangible representations that showcase the interplay between clothing and the human body. In the context of fashion design, computer vision techniques have the potential to enhance and streamline the design process. Departing from prior research primarily focused on virtual try-on, this paper tackles the task of multimodal-conditioned fashion image editing. Our approach aims to generate human-centric fashion images guided by multimodal prompts, including text, human body poses, garment sketches, and fabric textures. To address this problem, we propose extending latent diffusion models to incorporate these multiple modalities and modifying the structure of the denoising network, taking multimodal prompts as input. To condition the proposed architecture on fabric textures, we employ textual inversion techniques and let diverse cross-attention layers of the denoising network attend to textual and texture information, thus incorporating different granularity conditioning details. Given the lack of datasets for the task, we extend two existing fashion datasets, Dress Code and VITON-HD, with multimodal annotations.
 Experimental evaluations demonstrate the effectiveness of our proposed approach in terms of realism and coherence concerning the provided multimodal inputs.
 
+
+![](assets/banner.svg "Overview")
+Example of images generated using the proposed Textual-inverted Multimodal Garment Designer (Ti-MGD) method, with each row featuring the same model edited using different inputs. For each generated image, we show the generation input conditions: texture (top left), keypoints (middle left), sketch (bottom left), and text (bottom of each column).
+
+
 ## Citation
 If you make use of our work, please cite our paper:
 
-<!-- ```bibtex
-@inproceedings{baldrati2023multimodal,
-  title={Multimodal Garment Designer: Human-Centric Latent Diffusion Models for Fashion Image Editing},
-  author={Baldrati, Alberto and Morelli, Davide and Cartella, Giuseppe and Cornia, Marcella and Bertini, Marco and Cucchiara, Rita},
-  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
-  year={2023}
+```bibtex
+@article{baldrati2024multimodalconditioned,
+      title={Multimodal-Conditioned Latent Diffusion Models for Fashion Image Editing},
+      author={Baldrati, Alberto and Morelli, Davide and Cornia, Marcella and Bertini, Marco and Cucchiara, Rita},
+      journal={arXiv preprint arXiv:2403.14828},
+      year={2024}
 }
-``` -->
+```
+
+## TODO
+- [ ] Training code
+- [ ] Pre-trained models
+- [ ] Inference code
 
 ## Acknowledgements
 This work has been supported by the European Commission under the PNRR-M4C2 project ``FAIR - Future Artificial Intelligence Research'' and the European Horizon 2020 Programme (grant number 951911 - AI4Media), and by the PRIN project ``CREATIVE: CRoss-modal understanding and gEnerATIon of Visual and tExtual content'' (CUP B87G22000460001), co-funded by the Italian Ministry of University.
