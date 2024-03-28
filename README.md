@@ -28,11 +28,11 @@ Example of images generated using the proposed Textual-inverted Multimodal Garme
 If you make use of our work, please cite our paper:
 
 ```bibtex
-@article{baldrati2024multimodalconditioned,
-      title={Multimodal-Conditioned Latent Diffusion Models for Fashion Image Editing},
-      author={Baldrati, Alberto and Morelli, Davide and Cornia, Marcella and Bertini, Marco and Cucchiara, Rita},
-      journal={arXiv preprint arXiv:2403.14828},
-      year={2024}
+@article{baldrati2024multimodal,
+  title={Multimodal-Conditioned Latent Diffusion Models for Fashion Image Editing},
+  author={Baldrati, Alberto and Morelli, Davide and Cornia, Marcella and Bertini, Marco and Cucchiara, Rita},
+  journal={arXiv preprint arXiv:2403.14828},
+  year={2024}
 }
 ```
 
